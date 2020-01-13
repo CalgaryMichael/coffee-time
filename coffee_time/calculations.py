@@ -34,10 +34,9 @@ def _calculate_average_rating(persons: List[Person], coffee_shop_ratings: Coffee
 
 
 def _get_opinions(persons: List[Person]) -> List[Opinion]:
-    opinions: List[Opinion] = []
-    for person in persons:
-        opinions += person.opinions
-    return opinions
+    return pydash.flatten(
+        pydash.map_(persons, lambda x: x.opinions)
+    )
 
 
 def _map_ratings(opinions: List[Opinion]) -> List[CoffeeShopRatings]:

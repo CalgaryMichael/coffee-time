@@ -1,4 +1,5 @@
 from decimal import Decimal
+
 from typing import List
 
 from coffee_time.models import WeightedCoffeeShop
