@@ -1,24 +1,26 @@
+from decimal import Decimal
+
 from coffee_time.models import CoffeeShop, Opinion, Person
 
 
 COFFEE_SHOP_1 = CoffeeShop(
     name='Coffee Shop #1',
     location='123 W Main St',
-    distance=0.50,
-    rewards=0.10
+    distance=Decimal('0.50'),
+    rewards=Decimal('0.10')
 )
 
 COFFEE_SHOP_2 = CoffeeShop(
     name='Coffee Shop #2',
     location='456 E Broadway St',
-    distance=0.65,
-    rewards=0.2
+    distance=Decimal('0.65'),
+    rewards=Decimal('0.20')
 )
 
 COFFEE_SHOP_3 = CoffeeShop(
     name='Coffee Shop #3',
     location='789 S 6th Ave',
-    distance=0.15,
+    distance=Decimal('0.35'),
     rewards=None
 )
 
