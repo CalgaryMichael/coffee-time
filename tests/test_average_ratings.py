@@ -1,6 +1,6 @@
 from decimal import Decimal
 
-from coffee_time import calculations as under_test
+from coffee_time import average_ratings as under_test
 from coffee_time.models import WeightedCoffeeShop
 
 from . import data, utils
